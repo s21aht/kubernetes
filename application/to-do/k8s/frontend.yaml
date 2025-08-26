@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: todo-frontend
-          image: s21aht/todo-frontend:latest
+          image: s21aht/todo-frontend:2
           ports:
             - containerPort: 3000
           env:
