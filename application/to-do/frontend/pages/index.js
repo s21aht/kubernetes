@@ -6,7 +6,7 @@ export default function Home() {
   const [task, setTask] = useState('');
 
   // Use env variable passed from Kubernetes
-  const BACKEND_URL = "http://192.168.61.29:30001";
+  const BACKEND_URL = "http://192.168.61.29:30001/";
 
   useEffect(() => { fetchTodos(); }, []);
 
