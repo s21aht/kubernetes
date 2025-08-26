@@ -162,7 +162,9 @@ sudo systemctl enable --now kubelet
 
 Run this **only on the master node (192.168.61.29):**
 ```bash
-sudo kubeadm init   --apiserver-advertise-address=192.168.61.29   --pod-network-cidr=10.100.0.0/16
+sudo kubeadm init \\
+  --apiserver-advertise-address=<master-node-ip> \\ ## example 192.168.61.29
+  --pod-network-cidr=<pod-network-cidr> ## example 10.100.0.0/16
 ```
 👉 Initializes the control plane with master node IP and Pod CIDR.
 
