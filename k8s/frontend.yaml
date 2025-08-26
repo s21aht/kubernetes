@@ -15,12 +15,12 @@ spec:
     spec:
       containers:
         - name: todo-frontend
-          image: s21aht/todo-frontend:2
+          image: s21aht/todo-frontend:3
           ports:
             - containerPort: 3000
-          env:
-            - name: NEXT_PUBLIC_BACKEND_URL
-              value: "http://192.168.61.29:30001"  # NodePort of backend service
+          # env:
+          #   - name: NEXT_PUBLIC_BACKEND_URL
+          #     value: "http://192.168.61.29:30001"  # NodePort of backend service
 ---
 apiVersion: v1
 kind: Service
