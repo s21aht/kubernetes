@@ -1,0 +1,15 @@
+# k8s/metallb-config.yaml
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: frontend-pool
+  namespace: metallb-system
+spec:
+  addresses:
+  - 192.168.61.29-192.168.61.29
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: frontend-adv
+  namespace: metallb-system
