@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/s21aht/kubernetes.git'
     targetRevision: main
-    path: k8s
+    path: k8s/services
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: todo-app
